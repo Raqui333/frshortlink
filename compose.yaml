@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    environment:
+      - REDIS_URL=redis://redis:6379
+    ports:
+      - '3000:3000'
+    depends_on:
+      - redis
+  redis:
+    ports:
+      - '6379:6379'
+    image: 'redis:alpine'
+    command: ['redis-server']
