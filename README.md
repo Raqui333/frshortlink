@@ -58,7 +58,7 @@ Server will be available at:
 
 ```json
 {
-  "success": "Your short link was successfully created here is your code",
+  "success": "Your short link was successfully created",
   "code": "8RsTbO",
   "expire_in_seconds": 30
 }
@@ -79,8 +79,8 @@ Returns `404` if code does not exist or expired.
 src/
  ├─ routes/        # API routes
  ├─ services/      # Redis client
- └─ utils/         # Code generator and helpers
- ├─ server.ts      # Fastify instance
+ ├─ utils/         # Code generator and helpers
+ └─ server.ts      # Fastify instance
 ```
 
 ---
