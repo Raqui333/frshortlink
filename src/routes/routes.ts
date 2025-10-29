@@ -47,7 +47,7 @@ export default async function Routes(fastify: FastifyInstance, options: FastifyP
     const url = await client.get(key);
 
     if (!url) {
-      return reply.code(400).send({ error: 'Invalid code' });
+      return reply.code(404).send({ error: 'Invalid code' });
     }
 
     return reply.redirect(url, 301);
