@@ -78,7 +78,7 @@ Returns `404` if code does not exist or expired.
 ```
 src/
  ├─ routes/        # API routes
- ├─ services/  s   # Redis client
+ ├─ services/      # Redis client
  └─ utils/         # Code generator and helpers
  ├─ server.ts      # Fastify instance
 ```

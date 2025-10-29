@@ -33,7 +33,7 @@ export default async function Routes(fastify: FastifyInstance, options: FastifyP
       });
 
       return reply.code(200).send({
-        success: 'Your short link was successfully created here is your code',
+        success: 'Your short link was successfully created',
         code: randomCode,
         expire_in_seconds: EXPIRE_TIME,
       });
